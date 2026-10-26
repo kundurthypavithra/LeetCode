@@ -7,7 +7,7 @@ public class ContainsDuplicate271 {
     static boolean containsDuplicate(int[] nums){
         HashMap<Integer, Integer> container = new HashMap<>();
         for(int i = 0; i < nums.length; i++){
-            if(container.containsValue(nums[i])){
+            if(container.containsKey(nums[i])){
                 return true;
             }else{
                 container.put( nums[i], i);
